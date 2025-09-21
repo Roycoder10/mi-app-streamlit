@@ -60,12 +60,15 @@ def create_pdf_report(ruta, grupo, total_distance, costo_total, eficiencia_km_li
 
 # Presentación de imágenes en columnas (tamaño reducido)
 col1, col2, col3 = st.columns([1,1,1])
+
 with col1:
-    st.image("analizer.png", caption="Trucking", width=500)
+    st.image("analizer.png", caption="Trucking", use_column_width=True)
+
 with col2:
-    st.image("Logo.png", caption="Imagen", width=300)
+    st.image("Logo.png", caption="Imagen", use_column_width=True)
+
 with col3:
-    st.image("Phonetruck.png", caption="TruckTechnology", width=250)
+    st.image("Phonetruck.png", caption="TruckTechnology", use_column_width=True)
 
 
 # Sección de contacto
@@ -494,3 +497,4 @@ if uploaded_file:
             st_folium(mapa, width=900, height=500)
         else:
             st.warning("No hay datos completos de latitud/longitud para este tramo.")
+
