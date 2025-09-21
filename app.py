@@ -59,7 +59,7 @@ def create_pdf_report(ruta, grupo, total_distance, costo_total, eficiencia_km_li
     return pdf.output(dest='S').encode('latin-1')
 
 # Presentación de imágenes en columnas (tamaño reducido)
-col1, col2, col3 = st.columns([2,1,1])
+col1, col2, col3 = st.columns([2,1,2])
 with col1:
     st.image("analizer.png", width=500)
 with col2:
@@ -494,6 +494,7 @@ if uploaded_file:
             st_folium(mapa, width=900, height=500)
         else:
             st.warning("No hay datos completos de latitud/longitud para este tramo.")
+
 
 
 
