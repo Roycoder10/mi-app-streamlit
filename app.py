@@ -132,14 +132,14 @@ st.markdown("---")
 contact_col1, contact_col2 = st.columns(2)
 
 with contact_col1:
-    st.subheader("Datos de la Empresa")
+    st.subheader("Enterprise")
     st.markdown(f"**Nombre de la empresa:** Solucines GPS Pro SAC")
     st.markdown(f"**RUC:** 12345678901")
     st.markdown(f"**Dirección:** Av. Arequipa 123, Mirafloes, Perú")
     st.markdown(f"**Web:** [www.solucionesgpspro.com](http://www.solucionesgpspro.com)")
 
 with contact_col2:
-    st.subheader("Elaborado por")
+    st.subheader("Powered by")
     st.markdown(f"**Nombre:** Wilder Roy Llacchua Iman")
     st.markdown(f"**Profesión:** Ingeniero de transportes, CIP 319922")
     st.markdown(f"**Teléfono:** +51 969 893 045")
@@ -494,6 +494,7 @@ if uploaded_file:
             st_folium(mapa, width=900, height=500)
         else:
             st.warning("No hay datos completos de latitud/longitud para este tramo.")
+
 
 
 
